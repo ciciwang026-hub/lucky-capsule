@@ -66,6 +66,26 @@ body {
   50% { transform: translate(60px, -40px) scale(1.15); }
 }
 
+/* Floating candy orbs (Sticker Pop) — small colored shapes drifting in the dark */
+.bg-floaters { position: fixed; inset: 0; pointer-events: none; z-index: 1; }
+.floater {
+  position: absolute;
+  display: block;
+  border: 2px solid rgba(255, 255, 255, .55);
+  opacity: .85;
+}
+.f1 { width: 46px; height: 46px; left: 7%;  top: 22%; background: #5eb3ff; border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; box-shadow: 0 0 22px rgba(94,179,255,.6);  animation: floaty 8s ease-in-out infinite; }
+.f2 { width: 38px; height: 38px; left: 16%; top: 70%; background: #ffd23f; border-radius: 50%;                                  box-shadow: 0 0 22px rgba(255,210,63,.55); animation: floaty 10s ease-in-out infinite 1s; }
+.f3 { width: 34px; height: 34px; right: 9%; top: 30%; background: #ff7ebd; border-radius: 45% 55% 55% 45%;                       box-shadow: 0 0 22px rgba(255,126,189,.55); animation: floaty 9s ease-in-out infinite .5s; }
+.f4 { width: 50px; height: 50px; right: 6%; bottom: 16%; background: #2ec7a6; border-radius: 60% 40% 50% 50% / 50%;             box-shadow: 0 0 22px rgba(46,199,166,.5);  animation: floaty 11s ease-in-out infinite 2s; }
+.f5 { width: 30px; height: 30px; left: 44%; top: 12%; background: #a888ff; border-radius: 40% 60% 60% 40%;                       box-shadow: 0 0 20px rgba(168,136,255,.55); animation: floaty 7.5s ease-in-out infinite .8s; }
+.f6 { width: 26px; height: 26px; left: 30%; bottom: 12%; background: #ff9f43; border-radius: 50%;                                box-shadow: 0 0 18px rgba(255,159,67,.5);  animation: floaty 9.5s ease-in-out infinite 1.5s; }
+.f7 { width: 32px; height: 32px; right: 26%; top: 78%; background: #ff5252; border-radius: 35% 65% 55% 45%;                      box-shadow: 0 0 20px rgba(255,82,82,.5);   animation: floaty 8.5s ease-in-out infinite .3s; }
+@keyframes floaty {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%      { transform: translateY(-28px) rotate(16deg); }
+}
+
 /* ============ TOP BAR ============ */
 .topbar {
   position: relative;
@@ -449,7 +469,8 @@ body {
 .globe-inner.spin .bb5 { animation-name: frenzy-5 !important; }
 .globe-inner.spin .bb6 { animation-name: frenzy-6 !important; }
 .globe-inner.spin .bb7 { animation-name: frenzy-7 !important; }
-.globe-inner.spin .bb8.ssr { animation-name: frenzy-8 !important; }
+.globe-inner.spin .bb8 { animation-name: frenzy-8 !important; }
+.globe-inner.spin .bb9.ssr { animation-name: frenzy-9 !important; }
 
 @keyframes frenzy-1 {
   0%   { transform: translate(0,0) rotate(0deg); }
@@ -521,8 +542,18 @@ body {
   84%  { transform: translate(-75px,-40px) rotate(-700deg); }
   100% { transform: translate(0,0) rotate(720deg); }
 }
-/* SSR Ball — extra dramatic frenzy, slightly bigger orbit, ends at center for clean drop */
 @keyframes frenzy-8 {
+  0%   { transform: translate(0,0) rotate(0deg); }
+  14%  { transform: translate(-55px,68px) rotate(-130deg); }
+  28%  { transform: translate(72px,-48px) rotate(250deg); }
+  42%  { transform: translate(-68px,-60px) rotate(-380deg); }
+  56%  { transform: translate(58px,72px) rotate(520deg); }
+  70%  { transform: translate(-72px,45px) rotate(-620deg); }
+  84%  { transform: translate(60px,-65px) rotate(700deg); }
+  100% { transform: translate(0,0) rotate(720deg); }
+}
+/* SSR Ball — extra dramatic frenzy, slightly bigger orbit, ends at center for clean drop */
+@keyframes frenzy-9 {
   0%   { transform: translate(0,0) rotate(0deg) scale(1); }
   14%  { transform: translate(-70px,-60px) rotate(-150deg) scale(1.05); }
   28%  { transform: translate(70px,75px) rotate(290deg) scale(.98); }
@@ -547,7 +578,7 @@ body {
   z-index: 10;
 }
 
-/* Big balls — each is an inline SVG with a unique shape + cute face */
+/* Big balls — each is an inline SVG sticker shape + cute face */
 .big-ball {
   position: absolute;
   width: 64px;
@@ -560,29 +591,30 @@ body {
 .big-ball .ball-art {
   width: 100%;
   height: 100%;
-  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, .35));
+  filter: drop-shadow(2px 3px 0 rgba(10, 6, 18, .55)) drop-shadow(0 4px 12px rgba(0, 0, 0, .4));
   overflow: visible;
 }
-/* Position + size per ball */
-.bb1 { top: 12%; left: 10%; animation-delay:  0s;   width: 64px; height: 64px; }   /* circle */
-.bb2 { top: 8%;  left: 52%; animation-delay: -.7s;  width: 58px; height: 58px; }   /* heart */
-.bb3 { top: 48%; left: 8%;  animation-delay: -1.4s; width: 60px; height: 60px; }   /* star */
-.bb4 { top: 62%; left: 56%; animation-delay: -2.1s; width: 52px; height: 52px; }   /* teardrop */
-.bb5 { top: 26%; left: 22%; animation-delay: -2.8s; width: 60px; height: 70px; }   /* bunny (taller for ears) */
-.bb6 { top: 4%;  left: 28%; animation-delay: -3.5s; width: 50px; height: 50px; }   /* rounded square */
-.bb7 { top: 70%; left: 22%; animation-delay: -.3s;  width: 48px; height: 48px; }   /* hexagon */
+/* Position per ball — loose 3x3 cluster inside the 320px globe, all 9 visible */
+.bb1 { top: 46px;  left: 50px;  animation-delay:  0s;   }   /* cloud     — top L */
+.bb2 { top: 34px;  left: 128px; animation-delay: -.7s;  }   /* mushroom  — top C */
+.bb3 { top: 50px;  left: 206px; animation-delay: -1.4s; }   /* lightning — top R */
+.bb4 { top: 122px; left: 30px;  animation-delay: -2.1s; }   /* star      — mid L */
+.bb8 { top: 122px; left: 226px; animation-delay: -2.8s; }   /* teardrop  — mid R */
+.bb5 { top: 198px; left: 50px;  animation-delay: -3.5s; }   /* heart     — bot L */
+.bb7 { top: 204px; left: 128px; animation-delay: -.3s;  }   /* flower    — bot C */
+.bb6 { top: 198px; left: 206px; animation-delay: -1.8s; }   /* moon      — bot R */
 
-/* SSR Ball — golden, prominent, glowing */
-.bb8.ssr {
-  top: 38%; left: 42%;
-  width: 78px; height: 78px;
+/* SSR Ball — golden, prominent, glowing, center */
+.bb9.ssr {
+  top: 118px; left: 120px;
+  width: 80px; height: 80px;
   animation:
     big-ball-float 5s ease-in-out infinite,
     ssr-glow 2.4s ease-in-out infinite;
   animation-delay: -1s, 0s;
   z-index: 3;
 }
-.bb8.ssr .ball-art {
+.bb9.ssr .ball-art {
   filter:
     drop-shadow(0 0 16px rgba(244, 212, 144, .85))
     drop-shadow(0 0 32px rgba(244, 212, 144, .45))

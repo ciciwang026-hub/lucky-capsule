@@ -14,111 +14,87 @@
   <!-- ==================== SVG defs (gradients + face symbols) ==================== -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
-      <!-- Ball gradients -->
-      <radialGradient id="g-orange" cx="30%" cy="30%" r="80%">
-        <stop offset="0%"   stop-color="#ffd28a"/>
-        <stop offset="100%" stop-color="#f97316"/>
+      <!-- Ball gradients (Sticker Pop set) -->
+      <radialGradient id="g-sky" cx="32%" cy="28%" r="85%">
+        <stop offset="0%" stop-color="#dff2ff"/><stop offset="100%" stop-color="#5eb3ff"/>
       </radialGradient>
-      <radialGradient id="g-purple" cx="30%" cy="30%" r="80%">
-        <stop offset="0%"   stop-color="#d4caff"/>
-        <stop offset="100%" stop-color="#6e5be9"/>
+      <radialGradient id="g-coral" cx="32%" cy="28%" r="85%">
+        <stop offset="0%" stop-color="#ffd3cd"/><stop offset="100%" stop-color="#ff5252"/>
       </radialGradient>
-      <radialGradient id="g-yellow" cx="30%" cy="30%" r="80%">
-        <stop offset="0%"   stop-color="#ffe8a4"/>
-        <stop offset="100%" stop-color="#f4d490"/>
+      <radialGradient id="g-lemon" cx="32%" cy="28%" r="85%">
+        <stop offset="0%" stop-color="#fff5bd"/><stop offset="100%" stop-color="#ffce2e"/>
       </radialGradient>
-      <radialGradient id="g-pink" cx="30%" cy="30%" r="80%">
-        <stop offset="0%"   stop-color="#ffc4d8"/>
-        <stop offset="100%" stop-color="#ec4899"/>
+      <radialGradient id="g-orange" cx="32%" cy="28%" r="85%">
+        <stop offset="0%" stop-color="#ffe2c4"/><stop offset="100%" stop-color="#ff9f43"/>
       </radialGradient>
-      <radialGradient id="g-blue" cx="30%" cy="30%" r="80%">
-        <stop offset="0%"   stop-color="#aceaff"/>
-        <stop offset="100%" stop-color="#3b82f6"/>
+      <radialGradient id="g-pink" cx="32%" cy="28%" r="85%">
+        <stop offset="0%" stop-color="#ffdcef"/><stop offset="100%" stop-color="#ff7ebd"/>
       </radialGradient>
-      <radialGradient id="g-green" cx="30%" cy="30%" r="80%">
-        <stop offset="0%"   stop-color="#b5f5d8"/>
-        <stop offset="100%" stop-color="#10b981"/>
+      <radialGradient id="g-lilac" cx="32%" cy="28%" r="85%">
+        <stop offset="0%" stop-color="#ece2ff"/><stop offset="100%" stop-color="#a888ff"/>
       </radialGradient>
-      <radialGradient id="g-amber" cx="30%" cy="30%" r="80%">
-        <stop offset="0%"   stop-color="#ffd6b0"/>
-        <stop offset="100%" stop-color="#f59e0b"/>
+      <radialGradient id="g-mint" cx="32%" cy="28%" r="85%">
+        <stop offset="0%" stop-color="#d3f8ee"/><stop offset="100%" stop-color="#2ec7a6"/>
       </radialGradient>
-      <radialGradient id="g-gold" cx="30%" cy="30%" r="80%">
-        <stop offset="0%"   stop-color="#fff8e0"/>
-        <stop offset="40%"  stop-color="#ffe28a"/>
-        <stop offset="100%" stop-color="#d4a040"/>
+      <radialGradient id="g-teal" cx="32%" cy="28%" r="85%">
+        <stop offset="0%" stop-color="#d4f1f5"/><stop offset="100%" stop-color="#2bb3c0"/>
+      </radialGradient>
+      <radialGradient id="g-gold" cx="30%" cy="26%" r="85%">
+        <stop offset="0%" stop-color="#fff8e0"/><stop offset="45%" stop-color="#ffd23f"/><stop offset="100%" stop-color="#e0921a"/>
       </radialGradient>
 
-      <!-- Happy face — default for all balls -->
+      <!-- Faces -->
       <symbol id="face-happy" viewBox="0 0 60 60">
-        <ellipse cx="22" cy="28" rx="2.8" ry="3.8" fill="rgba(20,10,40,.85)"/>
-        <ellipse cx="38" cy="28" rx="2.8" ry="3.8" fill="rgba(20,10,40,.85)"/>
-        <circle cx="20" cy="29" r="1" fill="#fff" opacity=".9"/>
-        <circle cx="36" cy="29" r="1" fill="#fff" opacity=".9"/>
-        <path d="M 22 39 Q 30 45 38 39" stroke="rgba(20,10,40,.85)" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-        <circle cx="16" cy="36" r="3" fill="#ff8888" opacity=".45"/>
-        <circle cx="44" cy="36" r="3" fill="#ff8888" opacity=".45"/>
+        <ellipse cx="22" cy="28" rx="2.8" ry="3.8" fill="#1c1630"/>
+        <ellipse cx="38" cy="28" rx="2.8" ry="3.8" fill="#1c1630"/>
+        <circle cx="20.6" cy="26.6" r="1" fill="#fff"/>
+        <circle cx="36.6" cy="26.6" r="1" fill="#fff"/>
+        <path d="M 22 38 Q 30 45 38 38" stroke="#1c1630" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+        <circle cx="15" cy="35" r="3" fill="#ff7a7a" opacity=".5"/>
+        <circle cx="45" cy="35" r="3" fill="#ff7a7a" opacity=".5"/>
       </symbol>
-
-      <!-- Wink face -->
       <symbol id="face-wink" viewBox="0 0 60 60">
-        <ellipse cx="22" cy="28" rx="2.8" ry="3.8" fill="rgba(20,10,40,.85)"/>
-        <circle cx="20" cy="29" r="1" fill="#fff" opacity=".9"/>
-        <path d="M 34 28 Q 38 25 42 28" stroke="rgba(20,10,40,.85)" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-        <path d="M 21 39 Q 30 47 39 39" stroke="rgba(20,10,40,.85)" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-        <circle cx="16" cy="36" r="3" fill="#ff8888" opacity=".45"/>
-        <circle cx="44" cy="36" r="3" fill="#ff8888" opacity=".45"/>
+        <ellipse cx="22" cy="28" rx="2.8" ry="3.8" fill="#1c1630"/>
+        <circle cx="20.6" cy="26.6" r="1" fill="#fff"/>
+        <path d="M 34 28 Q 38 24 42 28" stroke="#1c1630" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+        <path d="M 21 38 Q 30 46 39 38" stroke="#1c1630" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+        <circle cx="15" cy="35" r="3" fill="#ff7a7a" opacity=".5"/>
+        <circle cx="45" cy="35" r="3" fill="#ff7a7a" opacity=".5"/>
       </symbol>
-
-      <!-- Surprised — open mouth -->
       <symbol id="face-wow" viewBox="0 0 60 60">
-        <ellipse cx="22" cy="27" rx="2.6" ry="3.5" fill="rgba(20,10,40,.85)"/>
-        <ellipse cx="38" cy="27" rx="2.6" ry="3.5" fill="rgba(20,10,40,.85)"/>
-        <ellipse cx="30" cy="40" rx="3.5" ry="4.5" fill="rgba(20,10,40,.85)"/>
-        <ellipse cx="30" cy="41" rx="2" ry="2.5" fill="#5e2a3a" opacity=".7"/>
+        <ellipse cx="22" cy="27" rx="2.6" ry="3.5" fill="#1c1630"/>
+        <ellipse cx="38" cy="27" rx="2.6" ry="3.5" fill="#1c1630"/>
+        <ellipse cx="30" cy="39" rx="3.4" ry="4.4" fill="#1c1630"/>
+        <circle cx="15" cy="34" r="3" fill="#ff7a7a" opacity=".5"/>
+        <circle cx="45" cy="34" r="3" fill="#ff7a7a" opacity=".5"/>
       </symbol>
-
-      <!-- Cool — sunglasses -->
       <symbol id="face-cool" viewBox="0 0 60 60">
-        <rect x="15" y="25" width="13" height="7" rx="2" fill="rgba(20,10,40,.92)"/>
-        <rect x="32" y="25" width="13" height="7" rx="2" fill="rgba(20,10,40,.92)"/>
-        <rect x="27" y="27.5" width="5" height="2" fill="rgba(20,10,40,.92)"/>
-        <path d="M 22 42 Q 30 47 38 42" stroke="rgba(20,10,40,.85)" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-        <circle cx="17" cy="22" r="1.2" fill="#fff" opacity=".7"/>
-        <circle cx="34" cy="22" r="1.2" fill="#fff" opacity=".7"/>
+        <rect x="14" y="25" width="13" height="7" rx="2" fill="#1c1630"/>
+        <rect x="33" y="25" width="13" height="7" rx="2" fill="#1c1630"/>
+        <rect x="27" y="27.5" width="6" height="2" fill="#1c1630"/>
+        <path d="M 22 41 Q 30 46 38 41" stroke="#1c1630" stroke-width="2.6" fill="none" stroke-linecap="round"/>
       </symbol>
-
-      <!-- Silly — tongue out -->
       <symbol id="face-silly" viewBox="0 0 60 60">
-        <path d="M 18 26 L 26 30 M 26 26 L 18 30" stroke="rgba(20,10,40,.85)" stroke-width="2.2" stroke-linecap="round"/>
-        <path d="M 34 26 L 42 30 M 42 26 L 34 30" stroke="rgba(20,10,40,.85)" stroke-width="2.2" stroke-linecap="round"/>
-        <path d="M 22 38 Q 30 44 38 38" stroke="rgba(20,10,40,.85)" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-        <path d="M 27 42 Q 30 49 33 42 Z" fill="#ff6688" stroke="rgba(20,10,40,.85)" stroke-width="1.5"/>
-        <circle cx="16" cy="36" r="3" fill="#ff8888" opacity=".45"/>
-        <circle cx="44" cy="36" r="3" fill="#ff8888" opacity=".45"/>
+        <path d="M 18 26 L 26 30 M 26 26 L 18 30" stroke="#1c1630" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M 34 26 L 42 30 M 42 26 L 34 30" stroke="#1c1630" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M 22 37 Q 30 43 38 37" stroke="#1c1630" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+        <path d="M 27 41 Q 30 48 33 41 Z" fill="#ff5c8a" stroke="#1c1630" stroke-width="1.4"/>
       </symbol>
-
-      <!-- SSR — Crown + star eyes -->
       <symbol id="face-ssr" viewBox="0 0 60 60">
-        <path d="M 14 16 L 20 9 L 26 16 L 30 5 L 34 16 L 40 9 L 46 16 L 46 19 L 14 19 Z"
-              fill="url(#crownGrad)" stroke="#7a4010" stroke-width="0.7" stroke-linejoin="round"/>
         <defs>
           <linearGradient id="crownGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#ffd56a"/>
-            <stop offset="50%" stop-color="#d4a040"/>
-            <stop offset="100%" stop-color="#8a6020"/>
+            <stop offset="0%" stop-color="#fff0a8"/><stop offset="55%" stop-color="#ffce2e"/><stop offset="100%" stop-color="#cf8410"/>
           </linearGradient>
         </defs>
-        <circle cx="20" cy="8" r="1.4" fill="#fff5d4"/>
-        <circle cx="30" cy="4" r="1.6" fill="#fff5d4"/>
-        <circle cx="40" cy="8" r="1.4" fill="#fff5d4"/>
-        <!-- Star eyes -->
-        <path d="M 22 30 L 23.3 26 L 24.6 30 L 28.5 30 L 25.4 32.5 L 26.7 36.5 L 23.3 34 L 19.9 36.5 L 21.2 32.5 L 18.1 30 Z" fill="#1a0f2e"/>
-        <path d="M 38 30 L 39.3 26 L 40.6 30 L 44.5 30 L 41.4 32.5 L 42.7 36.5 L 39.3 34 L 35.9 36.5 L 37.2 32.5 L 34.1 30 Z" fill="#1a0f2e"/>
-        <!-- Big grin -->
-        <path d="M 19 43 Q 30 51 41 43" stroke="rgba(20,10,40,.92)" stroke-width="3" fill="none" stroke-linecap="round"/>
-        <!-- Tooth -->
-        <rect x="28" y="44" width="4" height="3" rx=".5" fill="#fff"/>
+        <path d="M 14 17 L 20 10 L 26 17 L 30 6 L 34 17 L 40 10 L 46 17 L 46 20 L 14 20 Z"
+              fill="url(#crownGrad)" stroke="#7a4010" stroke-width="1" stroke-linejoin="round"/>
+        <circle cx="20" cy="9" r="1.4" fill="#fff7d6"/>
+        <circle cx="30" cy="5" r="1.6" fill="#fff7d6"/>
+        <circle cx="40" cy="9" r="1.4" fill="#fff7d6"/>
+        <path d="M 22 30 L 23.3 26 L 24.6 30 L 28.5 30 L 25.4 32.5 L 26.7 36.5 L 23.3 34 L 19.9 36.5 L 21.2 32.5 L 18.1 30 Z" fill="#1c1630"/>
+        <path d="M 38 30 L 39.3 26 L 40.6 30 L 44.5 30 L 41.4 32.5 L 42.7 36.5 L 39.3 34 L 35.9 36.5 L 37.2 32.5 L 34.1 30 Z" fill="#1c1630"/>
+        <path d="M 19 42 Q 30 50 41 42" stroke="#1c1630" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <rect x="28" y="43" width="4" height="3" rx=".5" fill="#fff"/>
       </symbol>
     </defs>
   </svg>
@@ -129,6 +105,16 @@
     <div class="bg-orb bg-orb-1"></div>
     <div class="bg-orb bg-orb-2"></div>
     <div class="bg-orb bg-orb-3"></div>
+  </div>
+  <!-- Floating candy orbs (Sticker Pop) -->
+  <div class="bg-floaters" aria-hidden="true">
+    <span class="floater f1"></span>
+    <span class="floater f2"></span>
+    <span class="floater f3"></span>
+    <span class="floater f4"></span>
+    <span class="floater f5"></span>
+    <span class="floater f6"></span>
+    <span class="floater f7"></span>
   </div>
 
   <!-- Top bar -->
@@ -199,61 +185,88 @@
               <span class="sparkle s4">✦</span>
             </div>
             <div class="globe-inner" id="globe-inner">
-              <!-- bb1: Circle, orange, happy -->
+              <!-- bb1: Cloud (sky) -->
               <span class="big-ball bb1">
                 <svg class="ball-art" viewBox="0 0 60 60">
-                  <circle cx="30" cy="30" r="28" fill="url(#g-orange)"/>
-                  <use href="#face-happy"/>
+                  <path d="M 12 44 C 4 44 4 32 13 32 C 13 22 28 19 31 28 C 34 18 50 21 49 32 C 58 32 58 44 49 44 Z"
+                        fill="url(#g-sky)" stroke="#1c1630" stroke-width="2.5" stroke-linejoin="round"/>
+                  <use href="#face-happy" transform="translate(0,6)"/>
                 </svg>
               </span>
-              <!-- bb2: Heart, purple, wink -->
+              <!-- bb2: Mushroom (coral) -->
               <span class="big-ball bb2">
                 <svg class="ball-art" viewBox="0 0 60 60">
-                  <path d="M 30 54 C 6 36 6 14 22 14 C 27 14 30 17 30 22 C 30 17 33 14 38 14 C 54 14 54 36 30 54 Z" fill="url(#g-purple)"/>
-                  <use href="#face-wink" transform="translate(0, 3)"/>
+                  <path d="M 21 31 L 21 47 Q 21 53 27 53 L 33 53 Q 39 53 39 47 L 39 31 Z"
+                        fill="#fff3e0" stroke="#1c1630" stroke-width="2.5" stroke-linejoin="round"/>
+                  <path d="M 7 31 Q 7 9 30 9 Q 53 9 53 31 Z"
+                        fill="url(#g-coral)" stroke="#1c1630" stroke-width="2.5" stroke-linejoin="round"/>
+                  <circle cx="19" cy="20" r="3.6" fill="#fff" opacity=".9"/>
+                  <circle cx="38" cy="17" r="2.8" fill="#fff" opacity=".9"/>
+                  <circle cx="42" cy="26" r="2.2" fill="#fff" opacity=".9"/>
+                  <use href="#face-wink" transform="translate(0,-9)"/>
                 </svg>
               </span>
-              <!-- bb3: Star, yellow, silly -->
+              <!-- bb3: Lightning bolt (lemon) -->
               <span class="big-ball bb3">
                 <svg class="ball-art" viewBox="0 0 60 60">
-                  <path d="M 30 4 L 37 22 L 56 22 L 41 34 L 47 54 L 30 42 L 13 54 L 19 34 L 4 22 L 23 22 Z" fill="url(#g-yellow)"/>
-                  <use href="#face-silly" transform="translate(0, 4)"/>
+                  <path d="M 33 5 L 14 33 L 27 33 L 21 55 L 48 25 L 34 25 L 39 5 Z"
+                        fill="url(#g-lemon)" stroke="#1c1630" stroke-width="2.5" stroke-linejoin="round"/>
+                  <circle cx="28" cy="19" r="1.8" fill="#1c1630"/>
+                  <circle cx="35" cy="19" r="1.8" fill="#1c1630"/>
+                  <path d="M 28 24 Q 31.5 27 35 24" stroke="#1c1630" stroke-width="2" fill="none" stroke-linecap="round"/>
                 </svg>
               </span>
-              <!-- bb4: Teardrop (point-up), pink, wow -->
+              <!-- bb4: Star (orange) -->
               <span class="big-ball bb4">
                 <svg class="ball-art" viewBox="0 0 60 60">
-                  <path d="M 30 5 C 10 22 12 48 30 56 C 48 48 50 22 30 5 Z" fill="url(#g-pink)"/>
-                  <use href="#face-wow" transform="translate(0, 6)"/>
+                  <path d="M 30 4 L 37 22 L 56 22 L 41 34 L 47 54 L 30 42 L 13 54 L 19 34 L 4 22 L 23 22 Z"
+                        fill="url(#g-orange)" stroke="#1c1630" stroke-width="2.5" stroke-linejoin="round"/>
+                  <use href="#face-silly" transform="translate(0,4)"/>
                 </svg>
               </span>
-              <!-- bb5: Bunny-ear circle, blue, cool -->
+              <!-- bb5: Heart (pink) -->
               <span class="big-ball bb5">
                 <svg class="ball-art" viewBox="0 0 60 60">
-                  <ellipse cx="20" cy="9" rx="4.5" ry="9" fill="url(#g-blue)" transform="rotate(-10 20 9)"/>
-                  <ellipse cx="40" cy="9" rx="4.5" ry="9" fill="url(#g-blue)" transform="rotate(10 40 9)"/>
-                  <circle cx="30" cy="36" r="22" fill="url(#g-blue)"/>
-                  <use href="#face-cool" transform="translate(0, 8)"/>
+                  <path d="M 30 53 C 7 36 7 14 22 14 C 27 14 30 17 30 22 C 30 17 33 14 38 14 C 53 14 53 36 30 53 Z"
+                        fill="url(#g-pink)" stroke="#1c1630" stroke-width="2.5" stroke-linejoin="round"/>
+                  <use href="#face-wow" transform="translate(0,3)"/>
                 </svg>
               </span>
-              <!-- bb6: Rounded square, green, happy -->
+              <!-- bb6: Crescent moon (lilac) -->
               <span class="big-ball bb6">
                 <svg class="ball-art" viewBox="0 0 60 60">
-                  <rect x="4" y="4" width="52" height="52" rx="16" fill="url(#g-green)"/>
+                  <path d="M 42 6 A 24 24 0 1 0 42 54 A 19 19 0 1 1 42 6 Z"
+                        fill="url(#g-lilac)" stroke="#1c1630" stroke-width="2.5" stroke-linejoin="round"/>
+                  <use href="#face-wink" transform="translate(-7,0)"/>
+                </svg>
+              </span>
+              <!-- bb7: Flower (mint petals + lemon center) -->
+              <span class="big-ball bb7">
+                <svg class="ball-art" viewBox="0 0 60 60">
+                  <g fill="url(#g-mint)" stroke="#1c1630" stroke-width="2.2">
+                    <circle cx="30" cy="13" r="9.5"/>
+                    <circle cx="45" cy="22" r="9.5"/>
+                    <circle cx="45" cy="39" r="9.5"/>
+                    <circle cx="30" cy="48" r="9.5"/>
+                    <circle cx="15" cy="39" r="9.5"/>
+                    <circle cx="15" cy="22" r="9.5"/>
+                  </g>
+                  <circle cx="30" cy="30" r="13" fill="url(#g-lemon)" stroke="#1c1630" stroke-width="2.5"/>
                   <use href="#face-happy"/>
                 </svg>
               </span>
-              <!-- bb7: Hexagon, amber, wink -->
-              <span class="big-ball bb7">
+              <!-- bb8: Teardrop (teal) -->
+              <span class="big-ball bb8">
                 <svg class="ball-art" viewBox="0 0 60 60">
-                  <path d="M 30 4 L 54 17 L 54 43 L 30 56 L 6 43 L 6 17 Z" fill="url(#g-amber)"/>
-                  <use href="#face-wink"/>
+                  <path d="M 30 5 C 12 24 14 50 30 56 C 46 50 48 24 30 5 Z"
+                        fill="url(#g-teal)" stroke="#1c1630" stroke-width="2.5" stroke-linejoin="round"/>
+                  <use href="#face-cool" transform="translate(0,8)"/>
                 </svg>
               </span>
-              <!-- bb8: SSR Circle, gold, crown + star eyes -->
-              <span class="big-ball bb8 ssr" id="ssr-ball">
+              <!-- bb9: SSR crown gem (gold) -->
+              <span class="big-ball bb9 ssr" id="ssr-ball">
                 <svg class="ball-art" viewBox="0 0 60 60">
-                  <circle cx="30" cy="30" r="28" fill="url(#g-gold)"/>
+                  <circle cx="30" cy="32" r="26" fill="url(#g-gold)" stroke="#1c1630" stroke-width="2.5"/>
                   <use href="#face-ssr"/>
                 </svg>
               </span>
